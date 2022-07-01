@@ -49,4 +49,8 @@ public class CalculatorSteps {
 
     }
 
+    public void respuesta(){
+        this.driver.findElement(CalculatorPage.respuesta).getText();
+    }
+
 }

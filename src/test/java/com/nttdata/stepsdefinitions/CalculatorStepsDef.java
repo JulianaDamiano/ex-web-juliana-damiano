@@ -1,5 +1,6 @@
 package com.nttdata.stepsdefinitions;
 
+import com.nttdata.page.CalculatorPage;
 import com.nttdata.steps.CalculatorSteps;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -63,6 +64,8 @@ public class CalculatorStepsDef {
     public void valido_que_debería_aparecer_el_resultado() {
         //int resultado = calculatorSteps(driver);
         //prueba: validar que al menos existe un item
+        CalculatorSteps resultado=new CalculatorSteps(driver);
+        resultado.respuesta();
         screenShot();
     }
 
